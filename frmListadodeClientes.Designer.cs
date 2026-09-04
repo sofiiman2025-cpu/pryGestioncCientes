@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.grpConsulta = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Limite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +42,7 @@
             this.lblProm = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
             this.grpConsulta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // grpConsulta
@@ -54,7 +54,7 @@
             this.grpConsulta.Controls.Add(this.lblPromDeu);
             this.grpConsulta.Controls.Add(this.lblCantCli);
             this.grpConsulta.Controls.Add(this.lblDeuda);
-            this.grpConsulta.Controls.Add(this.dataGridView1);
+            this.grpConsulta.Controls.Add(this.dgvDatos);
             this.grpConsulta.Location = new System.Drawing.Point(19, 12);
             this.grpConsulta.Name = "grpConsulta";
             this.grpConsulta.Size = new System.Drawing.Size(482, 425);
@@ -63,18 +63,18 @@
             this.grpConsulta.Text = "Consulta de datos";
             this.grpConsulta.Enter += new System.EventHandler(this.grpConsulta_Enter);
             // 
-            // dataGridView1
+            // dgvDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Nombre,
             this.Limite,
             this.Deuda});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 28);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 238);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDatos.Location = new System.Drawing.Point(20, 28);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(444, 238);
+            this.dgvDatos.TabIndex = 0;
             // 
             // Codigo
             // 
@@ -158,6 +158,7 @@
             this.btnListar.TabIndex = 7;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // frmListadodeClientes
             // 
@@ -167,9 +168,10 @@
             this.Controls.Add(this.grpConsulta);
             this.Name = "frmListadodeClientes";
             this.Text = "Listado de Clientes";
+            this.Load += new System.EventHandler(this.frmListadodeClientes_Load);
             this.grpConsulta.ResumeLayout(false);
             this.grpConsulta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,7 +179,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpConsulta;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Limite;

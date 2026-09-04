@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryGestioncCientes
 {
@@ -17,14 +18,14 @@ namespace pryGestioncCientes
 
             AD.Write(Cod + ";" + Nom + ";" + Deu + ";");
             AD.WriteLine(Lim);
-             AD.Close();
+            AD.Close();
             AD.Dispose();
         }
 
-        public void Listar() 
+        public void Listar(DataGridView Grilla) 
         {
             string DatosLeidos = "";
-
+            string[] VectorDatos = new string[4];
 
             StreamReader AD = new StreamReader(NombreArchivo);
         
@@ -33,6 +34,10 @@ namespace pryGestioncCientes
             while (DatosLeidos != null) 
             {
 
+                VectorDatos = DatosLeidos.Split(';');
+
+                Grilla.Rows.Add(VectorDatos[0], VectorDatos[1], 
+                    VectorDatos[2], VectorDatos[3]);
 
                 DatosLeidos = AD.ReadLine();
 

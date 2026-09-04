@@ -16,6 +16,8 @@ namespace pryGestioncCientes
         {
             InitializeComponent();
         }
+        clsArchivoClientes objArchivo = new clsArchivoClientes();
+
 
         private void grpConsulta_Enter(object sender, EventArgs e)
         {
@@ -25,6 +27,16 @@ namespace pryGestioncCientes
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmListadodeClientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            objArchivo.Listar(dgvDatos);
         }
     }
 }
