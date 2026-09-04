@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDeuda = new System.Windows.Forms.TextBox();
             this.lblDeuda = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtLimite = new System.Windows.Forms.TextBox();
             this.lblLimite = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
             this.grpCarga.SuspendLayout();
@@ -44,7 +44,7 @@
             // grpCarga
             // 
             this.grpCarga.Controls.Add(this.btnCargar);
-            this.grpCarga.Controls.Add(this.textBox4);
+            this.grpCarga.Controls.Add(this.txtLimite);
             this.grpCarga.Controls.Add(this.lblLimite);
             this.grpCarga.Controls.Add(this.txtDeuda);
             this.grpCarga.Controls.Add(this.lblDeuda);
@@ -107,12 +107,12 @@
             this.lblDeuda.TabIndex = 4;
             this.lblDeuda.Text = "Deuda";
             // 
-            // textBox4
+            // txtLimite
             // 
-            this.textBox4.Location = new System.Drawing.Point(305, 103);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtLimite.Location = new System.Drawing.Point(305, 103);
+            this.txtLimite.Name = "txtLimite";
+            this.txtLimite.Size = new System.Drawing.Size(100, 20);
+            this.txtLimite.TabIndex = 7;
             // 
             // lblLimite
             // 
@@ -131,6 +131,7 @@
             this.btnCargar.TabIndex = 8;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // frmCargarClientes
             // 
@@ -151,7 +152,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpCarga;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtLimite;
         private System.Windows.Forms.Label lblLimite;
         private System.Windows.Forms.TextBox txtDeuda;
         private System.Windows.Forms.Label lblDeuda;

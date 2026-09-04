@@ -22,5 +22,11 @@ namespace pryGestioncCientes
             frmCargarClientes frm = new frmCargarClientes();
             frm.Show();
         }
+
+        private void lIstadoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadodeClientes frm = new frmListadodeClientes();
+            frm.Show();
+        }
     }
 }

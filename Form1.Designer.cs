@@ -85,7 +85,8 @@
             // 
             this.lIstadoDeClientesToolStripMenuItem.Name = "lIstadoDeClientesToolStripMenuItem";
             this.lIstadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
-            this.lIstadoDeClientesToolStripMenuItem.Text = "LIstado de clientes";
+            this.lIstadoDeClientesToolStripMenuItem.Text = "Listado de clientes";
+            this.lIstadoDeClientesToolStripMenuItem.Click += new System.EventHandler(this.lIstadoDeClientesToolStripMenuItem_Click);
             // 
             // clientesDeudoresToolStripMenuItem
             // 

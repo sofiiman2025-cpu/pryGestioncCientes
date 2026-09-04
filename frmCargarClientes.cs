@@ -22,5 +22,16 @@ namespace pryGestioncCientes
         {
 
         }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            objArchivo.Grabar( txtCodigo.Text, txtNombre.Text,
+                txtDeuda.Text, txtLimite.Text);
+            MessageBox.Show("Cliente cargado correctamente");
+            txtCodigo.Clear();
+            txtDeuda.Clear();
+            txtLimite.Clear();
+            txtNombre.Clear();
+        }
     }
 }

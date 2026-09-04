@@ -13,12 +13,34 @@ namespace pryGestioncCientes
 
         public void Grabar(String Cod, String Nom, String Deu, String Lim)
         { 
-        StreamWriter AD = new StreamWriter(NombreArchivo);
+        StreamWriter AD = new StreamWriter(NombreArchivo, true);
 
-            AD.Write(Cod + "," + Nom + "," + Deu + ",");
+            AD.Write(Cod + ";" + Nom + ";" + Deu + ";");
             AD.WriteLine(Lim);
              AD.Close();
             AD.Dispose();
+        }
+
+        public void Listar() 
+        {
+            string DatosLeidos = "";
+
+
+            StreamReader AD = new StreamReader(NombreArchivo);
+        
+            DatosLeidos = AD.ReadLine();
+
+            while (DatosLeidos != null) 
+            {
+
+
+                DatosLeidos = AD.ReadLine();
+
+            }
+
+            AD.Close();
+            AD.Dispose();
+
         }
     }
 
