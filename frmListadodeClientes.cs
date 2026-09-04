@@ -37,6 +37,10 @@ namespace pryGestioncCientes
         private void btnListar_Click(object sender, EventArgs e)
         {
             objArchivo.Listar(dgvDatos);
+
+            lblQclientes.Text = objArchivo.CantidadClientes().ToString();
+
+            lblTotal.Text = objArchivo.DeudaClientes().ToString();
         }
     }
 }

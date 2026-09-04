@@ -99,7 +99,7 @@
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
-            this.lblDeuda.Location = new System.Drawing.Point(276, 303);
+            this.lblDeuda.Location = new System.Drawing.Point(260, 303);
             this.lblDeuda.Name = "lblDeuda";
             this.lblDeuda.Size = new System.Drawing.Size(79, 13);
             this.lblDeuda.TabIndex = 1;
@@ -108,7 +108,7 @@
             // lblCantCli
             // 
             this.lblCantCli.AutoSize = true;
-            this.lblCantCli.Location = new System.Drawing.Point(272, 330);
+            this.lblCantCli.Location = new System.Drawing.Point(260, 330);
             this.lblCantCli.Name = "lblCantCli";
             this.lblCantCli.Size = new System.Drawing.Size(103, 13);
             this.lblCantCli.TabIndex = 2;
@@ -117,7 +117,7 @@
             // lblPromDeu
             // 
             this.lblPromDeu.AutoSize = true;
-            this.lblPromDeu.Location = new System.Drawing.Point(276, 357);
+            this.lblPromDeu.Location = new System.Drawing.Point(260, 357);
             this.lblPromDeu.Name = "lblPromDeu";
             this.lblPromDeu.Size = new System.Drawing.Size(99, 13);
             this.lblPromDeu.TabIndex = 3;
@@ -127,34 +127,34 @@
             // lblTotal
             // 
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTotal.Location = new System.Drawing.Point(382, 303);
+            this.lblTotal.Location = new System.Drawing.Point(369, 303);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(67, 13);
+            this.lblTotal.Size = new System.Drawing.Size(95, 13);
             this.lblTotal.TabIndex = 4;
             // 
             // lblQclientes
             // 
             this.lblQclientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblQclientes.Location = new System.Drawing.Point(382, 330);
+            this.lblQclientes.Location = new System.Drawing.Point(369, 330);
             this.lblQclientes.Name = "lblQclientes";
-            this.lblQclientes.Size = new System.Drawing.Size(67, 13);
+            this.lblQclientes.Size = new System.Drawing.Size(95, 13);
             this.lblQclientes.TabIndex = 5;
             // 
             // lblProm
             // 
-            this.lblProm.BackColor = System.Drawing.SystemColors.Control;
+            this.lblProm.BackColor = System.Drawing.Color.Linen;
             this.lblProm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblProm.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblProm.Location = new System.Drawing.Point(382, 357);
+            this.lblProm.Location = new System.Drawing.Point(369, 357);
             this.lblProm.Name = "lblProm";
-            this.lblProm.Size = new System.Drawing.Size(67, 13);
+            this.lblProm.Size = new System.Drawing.Size(95, 13);
             this.lblProm.TabIndex = 6;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(362, 392);
+            this.btnListar.Location = new System.Drawing.Point(352, 392);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(102, 27);
+            this.btnListar.Size = new System.Drawing.Size(119, 27);
             this.btnListar.TabIndex = 7;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -164,9 +164,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(520, 457);
             this.Controls.Add(this.grpConsulta);
             this.Name = "frmListadodeClientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de Clientes";
             this.Load += new System.EventHandler(this.frmListadodeClientes_Load);
             this.grpConsulta.ResumeLayout(false);
